@@ -1,0 +1,1576 @@
+{
+	"info": {
+		"_postman_id": "a56ee507-a6c3-436b-b68a-01b722861455",
+		"name": "web shop",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "7029219"
+	},
+	"item": [
+		{
+			"name": "Login",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "password",
+							"value": "password",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "amitjoshi2188@gmail.com",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/login",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"login"
+					]
+				},
+				"description": "Register New User"
+			},
+			"response": [
+				{
+					"name": "Login",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "Amit",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "amitjoshi2188@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "password",
+									"type": "text"
+								},
+								{
+									"key": "c_password",
+									"value": "password",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/v1/login",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"login"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "127.0.0.1:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 07 Jan 2023 13:09:23 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 07 Jan 2023 13:09:22 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.0.11"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "58"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"token\": \"eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiMDNjZDA5MjYxMTk0NTZkYWRiYWE2ZThiYzQyMzI4NGIwNjIyZWQ2MjdlNmVhYjQ3ZjcyYzRhOGI4YjczMDdlMWM5M2M5MGZiYzNhNDI5MzciLCJpYXQiOjE2NzMwOTY5NjIuMjM1ODQ0LCJuYmYiOjE2NzMwOTY5NjIuMjM1ODU4LCJleHAiOjE3MDQ2MzI5NjEuOTkyNjI5LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.BmyHmIYPRkFTHrOluYP6RRlwxC0qjXdHU1NGyNZrmSeNCo0VOrNL1W2894_67IeDIR6Mb-ljRwGN66elO8L3i7ynVUTX37ZF6FR4yUKnuEREyHh2QxdBZ3TzyvlgvWSZgmOoFz_mYwUfNC-oR3uABhfvucTnxc4rb5MJ7igKsk2lJrKdKrBdEzVdEwVbVlkPtzu_tfXwvs5xx9KSi_J2boJ6Ioi2Srzou3g8XWdUBK1y6xWpwP_YhNOMHTBJIdAWOFFWnRd8HtX2fTjRl_zyQAXcXuLLGkYgRiyqwivM3mEqwJsIB5iETIMD2gYAZeBF5GfJVIX8lPmAIfuRLQF7wd2-ZDp4-l9PhJ-LZgfm-sU50-KxxrnTXaGo6fg1baldHlkCUnF6xHxhJDCDcqknhqJ7WhC7g71Uk8Epp8mOY8PrKrYVHcva9t5LbPY5yi4i2uCuQkvrGO3zDkzuy-xqJtJ4whB5NTMbR-BMAJcfli3ggIprYBq-cOhYrWGAHHJNkta4dQY9jD0ow3To5Ni_UwQ_J8i7YjuhwXpPH-0RYIxoHWYNwYhz_yqk6czRZiIuiDdTkzk4wolu1DbcquM3BTpfO-S7mA5FbXdidrcC4HQiOl36VLaj_VBVU0DL25xp6BoiKhJSnv9ljVY04Qd7uwsFkyfumyEc8E98kJaJlOA\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Register",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Manoj",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "amitjoshi2188@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "password",
+							"type": "text"
+						},
+						{
+							"key": "c_password",
+							"value": "password",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/register",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"register"
+					]
+				},
+				"description": "Register New User"
+			},
+			"response": [
+				{
+					"name": "Register",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "Amit",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "amitjoshi2188@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "password",
+									"type": "text"
+								},
+								{
+									"key": "c_password",
+									"value": "password",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/v1/register",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"register"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "127.0.0.1:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 07 Jan 2023 13:09:23 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 07 Jan 2023 13:09:22 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.0.11"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "58"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"token\": \"eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiMDNjZDA5MjYxMTk0NTZkYWRiYWE2ZThiYzQyMzI4NGIwNjIyZWQ2MjdlNmVhYjQ3ZjcyYzRhOGI4YjczMDdlMWM5M2M5MGZiYzNhNDI5MzciLCJpYXQiOjE2NzMwOTY5NjIuMjM1ODQ0LCJuYmYiOjE2NzMwOTY5NjIuMjM1ODU4LCJleHAiOjE3MDQ2MzI5NjEuOTkyNjI5LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.BmyHmIYPRkFTHrOluYP6RRlwxC0qjXdHU1NGyNZrmSeNCo0VOrNL1W2894_67IeDIR6Mb-ljRwGN66elO8L3i7ynVUTX37ZF6FR4yUKnuEREyHh2QxdBZ3TzyvlgvWSZgmOoFz_mYwUfNC-oR3uABhfvucTnxc4rb5MJ7igKsk2lJrKdKrBdEzVdEwVbVlkPtzu_tfXwvs5xx9KSi_J2boJ6Ioi2Srzou3g8XWdUBK1y6xWpwP_YhNOMHTBJIdAWOFFWnRd8HtX2fTjRl_zyQAXcXuLLGkYgRiyqwivM3mEqwJsIB5iETIMD2gYAZeBF5GfJVIX8lPmAIfuRLQF7wd2-ZDp4-l9PhJ-LZgfm-sU50-KxxrnTXaGo6fg1baldHlkCUnF6xHxhJDCDcqknhqJ7WhC7g71Uk8Epp8mOY8PrKrYVHcva9t5LbPY5yi4i2uCuQkvrGO3zDkzuy-xqJtJ4whB5NTMbR-BMAJcfli3ggIprYBq-cOhYrWGAHHJNkta4dQY9jD0ow3To5Ni_UwQ_J8i7YjuhwXpPH-0RYIxoHWYNwYhz_yqk6czRZiIuiDdTkzk4wolu1DbcquM3BTpfO-S7mA5FbXdidrcC4HQiOl36VLaj_VBVU0DL25xp6BoiKhJSnv9ljVY04Qd7uwsFkyfumyEc8E98kJaJlOA\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Get Logged In User Information",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiODUzN2ZhNTdkZjE4ODQ2Y2JhYzJkYzJkZjBmMmM0N2NiMjk0NjU2MDFjOGE4YjUzN2NmNTEzY2EzNDFhMzhiNWVhMDY5NWQ4NTBhZTE1MjkiLCJpYXQiOjE2NzMwOTcyMDEuNDgyMzEzLCJuYmYiOjE2NzMwOTcyMDEuNDgyMzU5LCJleHAiOjE3MDQ2MzMyMDEuNDQzNDQyLCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.nWjNHHHk_IaB0ez-RCQltpEdr0dagdUnPTd5uF5kABC1KZBOHQQzTbi4FE9PnC-YXvwu2Gs9OOBZ_9u-irAQVFMk2GkPtyT0V5eYG5qhMvXu_S46GXYdDg2744SAJbRVSuwcZnOjynx2bzdWi0aSkAg8dFgCBrerr2HnW_J4lUWHLQ0WpwYxF2HRpb34nDxOOmRk5F8YehvBMD-CbuWeUqq_071IUyBsAe3utBp9qwR6bmuhMBwoLwM9ant2KsHZfnpg08H0-H6lU__oaJdidQi7lOWFnVHEDa77uaIXttSQ5TDjmtM4KkQYPfuab5KWglyKQDoZOuBsT0PEq6E_vhB1GopmSPQVIOXUStszX2HzP5Wa7cbkbzYKotp23902M0vkS6OlNbp9dGXIKFgLNj0CCTpJyCmPf6IhZOw8JB1SDi244IBW006_r-sj_odd-47-lp4643D1nPK0cqzRnAyS4HiGaO_pGcAJp3uwlfE9oXfexFzhAGH1VUYzcCUsRCmuXnsxplL-tEZdsAFUPqwurxk1EpYbXB5fD1gBt_zaB69Z3imUHww2FVNQyOiY5cR_3watXsvNAA4adHqfrnrVbIzEhtnrqWz_7b6e-WgxE3orV2k_U-qTQSNsupskgW2tGDxkEi0oGF4pJary9BopfRUsCePxfpjwc12Oeug",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/get-user",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"get-user"
+					]
+				},
+				"description": "Returns LoggedIn Users detail"
+			},
+			"response": [
+				{
+					"name": "Get Logged In User Information",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/v1/get-user",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"get-user"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "127.0.0.1:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 07 Jan 2023 13:15:02 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 07 Jan 2023 13:15:02 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.0.11"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "59"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"user\": {\n        \"id\": 1,\n        \"name\": \"Amit\",\n        \"email\": \"amitjoshi2188@gmail.com\",\n        \"email_verified_at\": null,\n        \"created_at\": \"2023-01-07T13:09:19.000000Z\",\n        \"updated_at\": \"2023-01-07T13:09:19.000000Z\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Orders Listing",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiODUzN2ZhNTdkZjE4ODQ2Y2JhYzJkYzJkZjBmMmM0N2NiMjk0NjU2MDFjOGE4YjUzN2NmNTEzY2EzNDFhMzhiNWVhMDY5NWQ4NTBhZTE1MjkiLCJpYXQiOjE2NzMwOTcyMDEuNDgyMzEzLCJuYmYiOjE2NzMwOTcyMDEuNDgyMzU5LCJleHAiOjE3MDQ2MzMyMDEuNDQzNDQyLCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.nWjNHHHk_IaB0ez-RCQltpEdr0dagdUnPTd5uF5kABC1KZBOHQQzTbi4FE9PnC-YXvwu2Gs9OOBZ_9u-irAQVFMk2GkPtyT0V5eYG5qhMvXu_S46GXYdDg2744SAJbRVSuwcZnOjynx2bzdWi0aSkAg8dFgCBrerr2HnW_J4lUWHLQ0WpwYxF2HRpb34nDxOOmRk5F8YehvBMD-CbuWeUqq_071IUyBsAe3utBp9qwR6bmuhMBwoLwM9ant2KsHZfnpg08H0-H6lU__oaJdidQi7lOWFnVHEDa77uaIXttSQ5TDjmtM4KkQYPfuab5KWglyKQDoZOuBsT0PEq6E_vhB1GopmSPQVIOXUStszX2HzP5Wa7cbkbzYKotp23902M0vkS6OlNbp9dGXIKFgLNj0CCTpJyCmPf6IhZOw8JB1SDi244IBW006_r-sj_odd-47-lp4643D1nPK0cqzRnAyS4HiGaO_pGcAJp3uwlfE9oXfexFzhAGH1VUYzcCUsRCmuXnsxplL-tEZdsAFUPqwurxk1EpYbXB5fD1gBt_zaB69Z3imUHww2FVNQyOiY5cR_3watXsvNAA4adHqfrnrVbIzEhtnrqWz_7b6e-WgxE3orV2k_U-qTQSNsupskgW2tGDxkEi0oGF4pJary9BopfRUsCePxfpjwc12Oeug",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/orders/listing",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"orders",
+						"listing"
+					]
+				},
+				"description": "Orders Listing"
+			},
+			"response": [
+				{
+					"name": "Orders Listing",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/v1/orders",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"orders"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "127.0.0.1:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 07 Jan 2023 15:55:57 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 07 Jan 2023 15:55:57 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.0.11"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "59"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"message\": \"Order List.\",\n    \"data\": [\n        {\n            \"id\": 1,\n            \"customer_id\": 1040,\n            \"payed\": \"0.00\",\n            \"created_at\": null,\n            \"updated_at\": null,\n            \"order_items\": [\n                {\n                    \"id\": 1,\n                    \"product_id\": 1,\n                    \"order_id\": 1,\n                    \"quantity\": 1,\n                    \"price\": \"73.78\",\n                    \"total\": \"73.78\",\n                    \"created_at\": null,\n                    \"updated_at\": null,\n                    \"product\": [\n                        {\n                            \"id\": 1,\n                            \"name\": \"Merc Clothing\",\n                            \"price\": \"73.78\",\n                            \"created_at\": \"2023-01-07T12:00:07.000000Z\",\n                            \"updated_at\": \"2023-01-07T12:00:07.000000Z\",\n                            \"pivot\": {\n                                \"product_id\": 1,\n                                \"id\": 1\n                            }\n                        }\n                    ]\n                }\n            ],\n            \"customer\": {\n                \"id\": 1040,\n                \"job_title\": \"Accountant\",\n                \"email\": \"Josh_Higgs6625@nanoff.biz\",\n                \"name\": \"Josh Higgs\",\n                \"first_name\": \"Josh \",\n                \"last_name\": \"Higgs\",\n                \"registered_since\": \"2019-08-09T00:00:00.000000Z\",\n                \"phone\": \"7-517-835-4225\",\n                \"created_at\": \"2023-01-07T11:59:02.000000Z\",\n                \"updated_at\": \"2023-01-07T11:59:02.000000Z\"\n            }\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "Customers Listing",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiODUzN2ZhNTdkZjE4ODQ2Y2JhYzJkYzJkZjBmMmM0N2NiMjk0NjU2MDFjOGE4YjUzN2NmNTEzY2EzNDFhMzhiNWVhMDY5NWQ4NTBhZTE1MjkiLCJpYXQiOjE2NzMwOTcyMDEuNDgyMzEzLCJuYmYiOjE2NzMwOTcyMDEuNDgyMzU5LCJleHAiOjE3MDQ2MzMyMDEuNDQzNDQyLCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.nWjNHHHk_IaB0ez-RCQltpEdr0dagdUnPTd5uF5kABC1KZBOHQQzTbi4FE9PnC-YXvwu2Gs9OOBZ_9u-irAQVFMk2GkPtyT0V5eYG5qhMvXu_S46GXYdDg2744SAJbRVSuwcZnOjynx2bzdWi0aSkAg8dFgCBrerr2HnW_J4lUWHLQ0WpwYxF2HRpb34nDxOOmRk5F8YehvBMD-CbuWeUqq_071IUyBsAe3utBp9qwR6bmuhMBwoLwM9ant2KsHZfnpg08H0-H6lU__oaJdidQi7lOWFnVHEDa77uaIXttSQ5TDjmtM4KkQYPfuab5KWglyKQDoZOuBsT0PEq6E_vhB1GopmSPQVIOXUStszX2HzP5Wa7cbkbzYKotp23902M0vkS6OlNbp9dGXIKFgLNj0CCTpJyCmPf6IhZOw8JB1SDi244IBW006_r-sj_odd-47-lp4643D1nPK0cqzRnAyS4HiGaO_pGcAJp3uwlfE9oXfexFzhAGH1VUYzcCUsRCmuXnsxplL-tEZdsAFUPqwurxk1EpYbXB5fD1gBt_zaB69Z3imUHww2FVNQyOiY5cR_3watXsvNAA4adHqfrnrVbIzEhtnrqWz_7b6e-WgxE3orV2k_U-qTQSNsupskgW2tGDxkEi0oGF4pJary9BopfRUsCePxfpjwc12Oeug",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/customers/listing",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"customers",
+						"listing"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Customers Listing",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/v1/customers/listing",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"customers",
+								"listing"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "127.0.0.1:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 07 Jan 2023 16:15:52 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 07 Jan 2023 16:15:52 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.0.11"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "58"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"message\": \"Customers List.\",\n    \"data\": {\n        \"current_page\": 1,\n        \"data\": [\n            {\n                \"id\": 1,\n                \"job_title\": \"Web Developer\",\n                \"email\": \"Harvey_Thornton4640@hourpy.biz\",\n                \"name\": \"Harvey Thornton\",\n                \"first_name\": \"Harvey \",\n                \"last_name\": \"Thornton\",\n                \"registered_since\": \"2019-04-03T00:00:00.000000Z\",\n                \"phone\": \"1-781-821-4473\",\n                \"created_at\": \"2023-01-07T11:58:49.000000Z\",\n                \"updated_at\": \"2023-01-07T11:58:49.000000Z\"\n            },\n            {\n                \"id\": 2,\n                \"job_title\": \"Mobile Developer\",\n                \"email\": \"Gemma_King244@cispeto.com\",\n                \"name\": \"Gemma King\",\n                \"first_name\": \"Gemma \",\n                \"last_name\": \"King\",\n                \"registered_since\": \"2019-05-11T00:00:00.000000Z\",\n                \"phone\": \"4-131-225-0286\",\n                \"created_at\": \"2023-01-07T11:58:49.000000Z\",\n                \"updated_at\": \"2023-01-07T11:58:49.000000Z\"\n            },\n            {\n                \"id\": 3,\n                \"job_title\": \"Cook\",\n                \"email\": \"Naomi_Griffiths511@yahoo.com\",\n                \"name\": \"Naomi Griffiths\",\n                \"first_name\": \"Naomi \",\n                \"last_name\": \"Griffiths\",\n                \"registered_since\": \"2019-03-17T00:00:00.000000Z\",\n                \"phone\": \"3-075-522-3267\",\n                \"created_at\": \"2023-01-07T11:58:49.000000Z\",\n                \"updated_at\": \"2023-01-07T11:58:49.000000Z\"\n            },\n            {\n                \"id\": 4,\n                \"job_title\": \"Bookkeeper\",\n                \"email\": \"Ivy_Snell5508@extex.org\",\n                \"name\": \"Ivy Snell\",\n                \"first_name\": \"Ivy \",\n                \"last_name\": \"Snell\",\n                \"registered_since\": \"2019-01-01T00:00:00.000000Z\",\n                \"phone\": \"1-860-085-8411\",\n                \"created_at\": \"2023-01-07T11:58:49.000000Z\",\n                \"updated_at\": \"2023-01-07T11:58:49.000000Z\"\n            },\n            {\n                \"id\": 5,\n                \"job_title\": \"Biologist\",\n                \"email\": \"Rachael_Barrett5681@iatim.tech\",\n                \"name\": \"Rachael Barrett\",\n                \"first_name\": \"Rachael \",\n                \"last_name\": \"Barrett\",\n                \"registered_since\": \"2019-10-11T00:00:00.000000Z\",\n                \"phone\": \"0-172-687-4025\",\n                \"created_at\": \"2023-01-07T11:58:49.000000Z\",\n                \"updated_at\": \"2023-01-07T11:58:49.000000Z\"\n            },\n            {\n                \"id\": 6,\n                \"job_title\": \"Machine Operator\",\n                \"email\": \"Rylee_Rodwell1134@cispeto.com\",\n                \"name\": \"Rylee Rodwell\",\n                \"first_name\": \"Rylee \",\n                \"last_name\": \"Rodwell\",\n                \"registered_since\": \"2019-12-31T00:00:00.000000Z\",\n                \"phone\": \"7-567-144-8300\",\n                \"created_at\": \"2023-01-07T11:58:49.000000Z\",\n                \"updated_at\": \"2023-01-07T11:58:49.000000Z\"\n            },\n            {\n                \"id\": 7,\n                \"job_title\": \"Insurance Broker\",\n                \"email\": \"Maxwell_Whinter8082@sheye.org\",\n                \"name\": \"Maxwell Whinter\",\n                \"first_name\": \"Maxwell \",\n                \"last_name\": \"Whinter\",\n                \"registered_since\": \"2019-03-07T00:00:00.000000Z\",\n                \"phone\": \"3-745-888-4186\",\n                \"created_at\": \"2023-01-07T11:58:49.000000Z\",\n                \"updated_at\": \"2023-01-07T11:58:49.000000Z\"\n            },\n            {\n                \"id\": 8,\n                \"job_title\": \"Web Developer\",\n                \"email\": \"Chester_Baker1744@corti.com\",\n                \"name\": \"Chester Baker\",\n                \"first_name\": \"Chester \",\n                \"last_name\": \"Baker\",\n                \"registered_since\": \"2019-03-11T00:00:00.000000Z\",\n                \"phone\": \"6-244-883-2632\",\n                \"created_at\": \"2023-01-07T11:58:49.000000Z\",\n                \"updated_at\": \"2023-01-07T11:58:49.000000Z\"\n            },\n            {\n                \"id\": 9,\n                \"job_title\": \"Food Technologist\",\n                \"email\": \"Makena_Connor1759@gembat.biz\",\n                \"name\": \"Makena Connor\",\n                \"first_name\": \"Makena \",\n                \"last_name\": \"Connor\",\n                \"registered_since\": \"2019-01-07T00:00:00.000000Z\",\n                \"phone\": \"2-033-501-5266\",\n                \"created_at\": \"2023-01-07T11:58:49.000000Z\",\n                \"updated_at\": \"2023-01-07T11:58:49.000000Z\"\n            },\n            {\n                \"id\": 10,\n                \"job_title\": \"Inspector\",\n                \"email\": \"Beatrice_Saunders9759@deons.tech\",\n                \"name\": \"Beatrice Saunders\",\n                \"first_name\": \"Beatrice \",\n                \"last_name\": \"Saunders\",\n                \"registered_since\": \"2019-07-17T00:00:00.000000Z\",\n                \"phone\": \"3-540-168-8237\",\n                \"created_at\": \"2023-01-07T11:58:49.000000Z\",\n                \"updated_at\": \"2023-01-07T11:58:49.000000Z\"\n            },\n            {\n                \"id\": 11,\n                \"job_title\": \"Food Technologist\",\n                \"email\": \"Chad_Clifford1415@nanoff.biz\",\n                \"name\": \"Chad Clifford\",\n                \"first_name\": \"Chad \",\n                \"last_name\": \"Clifford\",\n                \"registered_since\": \"2019-12-29T00:00:00.000000Z\",\n                \"phone\": \"3-552-051-1124\",\n                \"created_at\": \"2023-01-07T11:58:49.000000Z\",\n                \"updated_at\": \"2023-01-07T11:58:49.000000Z\"\n            },\n            {\n                \"id\": 12,\n                \"job_title\": \"Baker\",\n                \"email\": \"Clarissa_Thomas9345@twipet.com\",\n                \"name\": \"Clarissa Thomas\",\n                \"first_name\": \"Clarissa \",\n                \"last_name\": \"Thomas\",\n                \"registered_since\": \"2019-12-08T00:00:00.000000Z\",\n                \"phone\": \"0-377-823-7840\",\n                \"created_at\": \"2023-01-07T11:58:49.000000Z\",\n                \"updated_at\": \"2023-01-07T11:58:49.000000Z\"\n            },\n            {\n                \"id\": 13,\n                \"job_title\": \"Physician\",\n                \"email\": \"Eileen_Bishop9059@typill.biz\",\n                \"name\": \"Eileen Bishop\",\n                \"first_name\": \"Eileen \",\n                \"last_name\": \"Bishop\",\n                \"registered_since\": \"2019-01-02T00:00:00.000000Z\",\n                \"phone\": \"1-027-556-1705\",\n                \"created_at\": \"2023-01-07T11:58:49.000000Z\",\n                \"updated_at\": \"2023-01-07T11:58:49.000000Z\"\n            },\n            {\n                \"id\": 14,\n                \"job_title\": \"Project Manager\",\n                \"email\": \"Chelsea_Hamilton6982@elnee.tech\",\n                \"name\": \"Chelsea Hamilton\",\n                \"first_name\": \"Chelsea \",\n                \"last_name\": \"Hamilton\",\n                \"registered_since\": \"2019-08-15T00:00:00.000000Z\",\n                \"phone\": \"1-643-874-0411\",\n                \"created_at\": \"2023-01-07T11:58:49.000000Z\",\n                \"updated_at\": \"2023-01-07T11:58:49.000000Z\"\n            },\n            {\n                \"id\": 15,\n                \"job_title\": \"Operator\",\n                \"email\": \"Violet_Cann5936@extex.org\",\n                \"name\": \"Violet Cann\",\n                \"first_name\": \"Violet \",\n                \"last_name\": \"Cann\",\n                \"registered_since\": \"2019-07-05T00:00:00.000000Z\",\n                \"phone\": \"0-445-345-1306\",\n                \"created_at\": \"2023-01-07T11:58:49.000000Z\",\n                \"updated_at\": \"2023-01-07T11:58:49.000000Z\"\n            }\n        ],\n        \"first_page_url\": \"http://127.0.0.1:8000/api/v1/customers/listing?page=1\",\n        \"from\": 1,\n        \"last_page\": 667,\n        \"last_page_url\": \"http://127.0.0.1:8000/api/v1/customers/listing?page=667\",\n        \"links\": [\n            {\n                \"url\": null,\n                \"label\": \"&laquo; Previous\",\n                \"active\": false\n            },\n            {\n                \"url\": \"http://127.0.0.1:8000/api/v1/customers/listing?page=1\",\n                \"label\": \"1\",\n                \"active\": true\n            },\n            {\n                \"url\": \"http://127.0.0.1:8000/api/v1/customers/listing?page=2\",\n                \"label\": \"2\",\n                \"active\": false\n            },\n            {\n                \"url\": \"http://127.0.0.1:8000/api/v1/customers/listing?page=3\",\n                \"label\": \"3\",\n                \"active\": false\n            },\n            {\n                \"url\": \"http://127.0.0.1:8000/api/v1/customers/listing?page=4\",\n                \"label\": \"4\",\n                \"active\": false\n            },\n            {\n                \"url\": \"http://127.0.0.1:8000/api/v1/customers/listing?page=5\",\n                \"label\": \"5\",\n                \"active\": false\n            },\n            {\n                \"url\": \"http://127.0.0.1:8000/api/v1/customers/listing?page=6\",\n                \"label\": \"6\",\n                \"active\": false\n            },\n            {\n                \"url\": \"http://127.0.0.1:8000/api/v1/customers/listing?page=7\",\n                \"label\": \"7\",\n                \"active\": false\n            },\n            {\n                \"url\": \"http://127.0.0.1:8000/api/v1/customers/listing?page=8\",\n                \"label\": \"8\",\n                \"active\": false\n            },\n            {\n                \"url\": \"http://127.0.0.1:8000/api/v1/customers/listing?page=9\",\n                \"label\": \"9\",\n                \"active\": false\n            },\n            {\n                \"url\": \"http://127.0.0.1:8000/api/v1/customers/listing?page=10\",\n                \"label\": \"10\",\n                \"active\": false\n            },\n            {\n                \"url\": null,\n                \"label\": \"...\",\n                \"active\": false\n            },\n            {\n                \"url\": \"http://127.0.0.1:8000/api/v1/customers/listing?page=666\",\n                \"label\": \"666\",\n                \"active\": false\n            },\n            {\n                \"url\": \"http://127.0.0.1:8000/api/v1/customers/listing?page=667\",\n                \"label\": \"667\",\n                \"active\": false\n            },\n            {\n                \"url\": \"http://127.0.0.1:8000/api/v1/customers/listing?page=2\",\n                \"label\": \"Next &raquo;\",\n                \"active\": false\n            }\n        ],\n        \"next_page_url\": \"http://127.0.0.1:8000/api/v1/customers/listing?page=2\",\n        \"path\": \"http://127.0.0.1:8000/api/v1/customers/listing\",\n        \"per_page\": 15,\n        \"prev_page_url\": null,\n        \"to\": 15,\n        \"total\": 10000\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Product Listing",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiODUzN2ZhNTdkZjE4ODQ2Y2JhYzJkYzJkZjBmMmM0N2NiMjk0NjU2MDFjOGE4YjUzN2NmNTEzY2EzNDFhMzhiNWVhMDY5NWQ4NTBhZTE1MjkiLCJpYXQiOjE2NzMwOTcyMDEuNDgyMzEzLCJuYmYiOjE2NzMwOTcyMDEuNDgyMzU5LCJleHAiOjE3MDQ2MzMyMDEuNDQzNDQyLCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.nWjNHHHk_IaB0ez-RCQltpEdr0dagdUnPTd5uF5kABC1KZBOHQQzTbi4FE9PnC-YXvwu2Gs9OOBZ_9u-irAQVFMk2GkPtyT0V5eYG5qhMvXu_S46GXYdDg2744SAJbRVSuwcZnOjynx2bzdWi0aSkAg8dFgCBrerr2HnW_J4lUWHLQ0WpwYxF2HRpb34nDxOOmRk5F8YehvBMD-CbuWeUqq_071IUyBsAe3utBp9qwR6bmuhMBwoLwM9ant2KsHZfnpg08H0-H6lU__oaJdidQi7lOWFnVHEDa77uaIXttSQ5TDjmtM4KkQYPfuab5KWglyKQDoZOuBsT0PEq6E_vhB1GopmSPQVIOXUStszX2HzP5Wa7cbkbzYKotp23902M0vkS6OlNbp9dGXIKFgLNj0CCTpJyCmPf6IhZOw8JB1SDi244IBW006_r-sj_odd-47-lp4643D1nPK0cqzRnAyS4HiGaO_pGcAJp3uwlfE9oXfexFzhAGH1VUYzcCUsRCmuXnsxplL-tEZdsAFUPqwurxk1EpYbXB5fD1gBt_zaB69Z3imUHww2FVNQyOiY5cR_3watXsvNAA4adHqfrnrVbIzEhtnrqWz_7b6e-WgxE3orV2k_U-qTQSNsupskgW2tGDxkEi0oGF4pJary9BopfRUsCePxfpjwc12Oeug",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/products/listing",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"products",
+						"listing"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Product Listing",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/v1/products/listing",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"products",
+								"listing"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "127.0.0.1:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 07 Jan 2023 16:15:09 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 07 Jan 2023 16:15:09 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.0.11"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "59"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"message\": \"Products List.\",\n    \"data\": {\n        \"current_page\": 1,\n        \"data\": [\n            {\n                \"id\": 1,\n                \"name\": \"Merc Clothing\",\n                \"price\": \"73.78\",\n                \"created_at\": \"2023-01-07T12:00:07.000000Z\",\n                \"updated_at\": \"2023-01-07T12:00:07.000000Z\"\n            },\n            {\n                \"id\": 2,\n                \"name\": \"Cherokee Inc.\",\n                \"price\": \"78.33\",\n                \"created_at\": \"2023-01-07T12:00:07.000000Z\",\n                \"updated_at\": \"2023-01-07T12:00:07.000000Z\"\n            },\n            {\n                \"id\": 3,\n                \"name\": \"Converse\",\n                \"price\": \"74.75\",\n                \"created_at\": \"2023-01-07T12:00:07.000000Z\",\n                \"updated_at\": \"2023-01-07T12:00:07.000000Z\"\n            },\n            {\n                \"id\": 4,\n                \"name\": \"Angels Jeanswear\",\n                \"price\": \"16.21\",\n                \"created_at\": \"2023-01-07T12:00:07.000000Z\",\n                \"updated_at\": \"2023-01-07T12:00:07.000000Z\"\n            },\n            {\n                \"id\": 5,\n                \"name\": \"Izod\",\n                \"price\": \"81.02\",\n                \"created_at\": \"2023-01-07T12:00:07.000000Z\",\n                \"updated_at\": \"2023-01-07T12:00:07.000000Z\"\n            },\n            {\n                \"id\": 6,\n                \"name\": \"Calvin Klein\",\n                \"price\": \"49.37\",\n                \"created_at\": \"2023-01-07T12:00:07.000000Z\",\n                \"updated_at\": \"2023-01-07T12:00:07.000000Z\"\n            },\n            {\n                \"id\": 7,\n                \"name\": \"Nudie Jeans\",\n                \"price\": \"83.33\",\n                \"created_at\": \"2023-01-07T12:00:07.000000Z\",\n                \"updated_at\": \"2023-01-07T12:00:07.000000Z\"\n            },\n            {\n                \"id\": 8,\n                \"name\": \"Cherokee Inc.\",\n                \"price\": \"92.56\",\n                \"created_at\": \"2023-01-07T12:00:07.000000Z\",\n                \"updated_at\": \"2023-01-07T12:00:07.000000Z\"\n            },\n            {\n                \"id\": 9,\n                \"name\": \"Loyandford\",\n                \"price\": \"18.88\",\n                \"created_at\": \"2023-01-07T12:00:07.000000Z\",\n                \"updated_at\": \"2023-01-07T12:00:07.000000Z\"\n            },\n            {\n                \"id\": 10,\n                \"name\": \"Converse\",\n                \"price\": \"20.70\",\n                \"created_at\": \"2023-01-07T12:00:07.000000Z\",\n                \"updated_at\": \"2023-01-07T12:00:07.000000Z\"\n            },\n            {\n                \"id\": 11,\n                \"name\": \"Baby Gap\",\n                \"price\": \"85.55\",\n                \"created_at\": \"2023-01-07T12:00:07.000000Z\",\n                \"updated_at\": \"2023-01-07T12:00:07.000000Z\"\n            },\n            {\n                \"id\": 12,\n                \"name\": \"Ethika\",\n                \"price\": \"28.76\",\n                \"created_at\": \"2023-01-07T12:00:07.000000Z\",\n                \"updated_at\": \"2023-01-07T12:00:07.000000Z\"\n            },\n            {\n                \"id\": 13,\n                \"name\": \"Converse\",\n                \"price\": \"51.16\",\n                \"created_at\": \"2023-01-07T12:00:07.000000Z\",\n                \"updated_at\": \"2023-01-07T12:00:07.000000Z\"\n            },\n            {\n                \"id\": 14,\n                \"name\": \"Cherokee Inc.\",\n                \"price\": \"34.99\",\n                \"created_at\": \"2023-01-07T12:00:07.000000Z\",\n                \"updated_at\": \"2023-01-07T12:00:07.000000Z\"\n            },\n            {\n                \"id\": 15,\n                \"name\": \"Koton\",\n                \"price\": \"6.76\",\n                \"created_at\": \"2023-01-07T12:00:07.000000Z\",\n                \"updated_at\": \"2023-01-07T12:00:07.000000Z\"\n            }\n        ],\n        \"first_page_url\": \"http://127.0.0.1:8000/api/v1/products/listing?page=1\",\n        \"from\": 1,\n        \"last_page\": 7,\n        \"last_page_url\": \"http://127.0.0.1:8000/api/v1/products/listing?page=7\",\n        \"links\": [\n            {\n                \"url\": null,\n                \"label\": \"&laquo; Previous\",\n                \"active\": false\n            },\n            {\n                \"url\": \"http://127.0.0.1:8000/api/v1/products/listing?page=1\",\n                \"label\": \"1\",\n                \"active\": true\n            },\n            {\n                \"url\": \"http://127.0.0.1:8000/api/v1/products/listing?page=2\",\n                \"label\": \"2\",\n                \"active\": false\n            },\n            {\n                \"url\": \"http://127.0.0.1:8000/api/v1/products/listing?page=3\",\n                \"label\": \"3\",\n                \"active\": false\n            },\n            {\n                \"url\": \"http://127.0.0.1:8000/api/v1/products/listing?page=4\",\n                \"label\": \"4\",\n                \"active\": false\n            },\n            {\n                \"url\": \"http://127.0.0.1:8000/api/v1/products/listing?page=5\",\n                \"label\": \"5\",\n                \"active\": false\n            },\n            {\n                \"url\": \"http://127.0.0.1:8000/api/v1/products/listing?page=6\",\n                \"label\": \"6\",\n                \"active\": false\n            },\n            {\n                \"url\": \"http://127.0.0.1:8000/api/v1/products/listing?page=7\",\n                \"label\": \"7\",\n                \"active\": false\n            },\n            {\n                \"url\": \"http://127.0.0.1:8000/api/v1/products/listing?page=2\",\n                \"label\": \"Next &raquo;\",\n                \"active\": false\n            }\n        ],\n        \"next_page_url\": \"http://127.0.0.1:8000/api/v1/products/listing?page=2\",\n        \"path\": \"http://127.0.0.1:8000/api/v1/products/listing\",\n        \"per_page\": 15,\n        \"prev_page_url\": null,\n        \"to\": 15,\n        \"total\": 100\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Add Order",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiODUzN2ZhNTdkZjE4ODQ2Y2JhYzJkYzJkZjBmMmM0N2NiMjk0NjU2MDFjOGE4YjUzN2NmNTEzY2EzNDFhMzhiNWVhMDY5NWQ4NTBhZTE1MjkiLCJpYXQiOjE2NzMwOTcyMDEuNDgyMzEzLCJuYmYiOjE2NzMwOTcyMDEuNDgyMzU5LCJleHAiOjE3MDQ2MzMyMDEuNDQzNDQyLCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.nWjNHHHk_IaB0ez-RCQltpEdr0dagdUnPTd5uF5kABC1KZBOHQQzTbi4FE9PnC-YXvwu2Gs9OOBZ_9u-irAQVFMk2GkPtyT0V5eYG5qhMvXu_S46GXYdDg2744SAJbRVSuwcZnOjynx2bzdWi0aSkAg8dFgCBrerr2HnW_J4lUWHLQ0WpwYxF2HRpb34nDxOOmRk5F8YehvBMD-CbuWeUqq_071IUyBsAe3utBp9qwR6bmuhMBwoLwM9ant2KsHZfnpg08H0-H6lU__oaJdidQi7lOWFnVHEDa77uaIXttSQ5TDjmtM4KkQYPfuab5KWglyKQDoZOuBsT0PEq6E_vhB1GopmSPQVIOXUStszX2HzP5Wa7cbkbzYKotp23902M0vkS6OlNbp9dGXIKFgLNj0CCTpJyCmPf6IhZOw8JB1SDi244IBW006_r-sj_odd-47-lp4643D1nPK0cqzRnAyS4HiGaO_pGcAJp3uwlfE9oXfexFzhAGH1VUYzcCUsRCmuXnsxplL-tEZdsAFUPqwurxk1EpYbXB5fD1gBt_zaB69Z3imUHww2FVNQyOiY5cR_3watXsvNAA4adHqfrnrVbIzEhtnrqWz_7b6e-WgxE3orV2k_U-qTQSNsupskgW2tGDxkEi0oGF4pJary9BopfRUsCePxfpjwc12Oeug",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "customer_id",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "product_id",
+							"value": "3",
+							"type": "text"
+						},
+						{
+							"key": "quantity",
+							"value": "2",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/orders/add",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"orders",
+						"add"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Add Order",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "customer_id",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "payed",
+									"value": "0",
+									"type": "text"
+								},
+								{
+									"key": "product_id",
+									"value": "3",
+									"type": "text"
+								},
+								{
+									"key": "quantity",
+									"value": "2",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/v1/orders/add",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"orders",
+								"add"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "127.0.0.1:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 07 Jan 2023 17:13:43 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 07 Jan 2023 17:13:43 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.0.11"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "59"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"message\": \"Order created successfully.\",\n    \"data\": {\n        \"id\": 3,\n        \"name\": \"Converse\",\n        \"price\": \"74.75\",\n        \"created_at\": \"2023-01-07T12:00:07.000000Z\",\n        \"updated_at\": \"2023-01-07T12:00:07.000000Z\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Get Specific Order details",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiODUzN2ZhNTdkZjE4ODQ2Y2JhYzJkYzJkZjBmMmM0N2NiMjk0NjU2MDFjOGE4YjUzN2NmNTEzY2EzNDFhMzhiNWVhMDY5NWQ4NTBhZTE1MjkiLCJpYXQiOjE2NzMwOTcyMDEuNDgyMzEzLCJuYmYiOjE2NzMwOTcyMDEuNDgyMzU5LCJleHAiOjE3MDQ2MzMyMDEuNDQzNDQyLCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.nWjNHHHk_IaB0ez-RCQltpEdr0dagdUnPTd5uF5kABC1KZBOHQQzTbi4FE9PnC-YXvwu2Gs9OOBZ_9u-irAQVFMk2GkPtyT0V5eYG5qhMvXu_S46GXYdDg2744SAJbRVSuwcZnOjynx2bzdWi0aSkAg8dFgCBrerr2HnW_J4lUWHLQ0WpwYxF2HRpb34nDxOOmRk5F8YehvBMD-CbuWeUqq_071IUyBsAe3utBp9qwR6bmuhMBwoLwM9ant2KsHZfnpg08H0-H6lU__oaJdidQi7lOWFnVHEDa77uaIXttSQ5TDjmtM4KkQYPfuab5KWglyKQDoZOuBsT0PEq6E_vhB1GopmSPQVIOXUStszX2HzP5Wa7cbkbzYKotp23902M0vkS6OlNbp9dGXIKFgLNj0CCTpJyCmPf6IhZOw8JB1SDi244IBW006_r-sj_odd-47-lp4643D1nPK0cqzRnAyS4HiGaO_pGcAJp3uwlfE9oXfexFzhAGH1VUYzcCUsRCmuXnsxplL-tEZdsAFUPqwurxk1EpYbXB5fD1gBt_zaB69Z3imUHww2FVNQyOiY5cR_3watXsvNAA4adHqfrnrVbIzEhtnrqWz_7b6e-WgxE3orV2k_U-qTQSNsupskgW2tGDxkEi0oGF4pJary9BopfRUsCePxfpjwc12Oeug",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/orders/detail/3",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"orders",
+						"detail",
+						"3"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Orders Listing",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/v1/orders",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"orders"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "127.0.0.1:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 07 Jan 2023 15:55:57 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 07 Jan 2023 15:55:57 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.0.11"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "59"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"message\": \"Order List.\",\n    \"data\": [\n        {\n            \"id\": 1,\n            \"customer_id\": 1040,\n            \"payed\": \"0.00\",\n            \"created_at\": null,\n            \"updated_at\": null,\n            \"order_items\": [\n                {\n                    \"id\": 1,\n                    \"product_id\": 1,\n                    \"order_id\": 1,\n                    \"quantity\": 1,\n                    \"price\": \"73.78\",\n                    \"total\": \"73.78\",\n                    \"created_at\": null,\n                    \"updated_at\": null,\n                    \"product\": [\n                        {\n                            \"id\": 1,\n                            \"name\": \"Merc Clothing\",\n                            \"price\": \"73.78\",\n                            \"created_at\": \"2023-01-07T12:00:07.000000Z\",\n                            \"updated_at\": \"2023-01-07T12:00:07.000000Z\",\n                            \"pivot\": {\n                                \"product_id\": 1,\n                                \"id\": 1\n                            }\n                        }\n                    ]\n                }\n            ],\n            \"customer\": {\n                \"id\": 1040,\n                \"job_title\": \"Accountant\",\n                \"email\": \"Josh_Higgs6625@nanoff.biz\",\n                \"name\": \"Josh Higgs\",\n                \"first_name\": \"Josh \",\n                \"last_name\": \"Higgs\",\n                \"registered_since\": \"2019-08-09T00:00:00.000000Z\",\n                \"phone\": \"7-517-835-4225\",\n                \"created_at\": \"2023-01-07T11:59:02.000000Z\",\n                \"updated_at\": \"2023-01-07T11:59:02.000000Z\"\n            }\n        }\n    ]\n}"
+				},
+				{
+					"name": "Get Specific Order details",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/v1/orders/detail/3",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"orders",
+								"detail",
+								"3"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "127.0.0.1:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 07 Jan 2023 17:32:19 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 07 Jan 2023 17:32:19 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.0.11"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "58"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"message\": \"Order retrieved successfully.\",\n    \"data\": {\n        \"id\": 3,\n        \"customer_id\": 1,\n        \"payed\": \"0.00\",\n        \"created_at\": \"2023-01-07T17:13:43.000000Z\",\n        \"updated_at\": \"2023-01-07T17:13:43.000000Z\",\n        \"order_items\": [\n            {\n                \"id\": 3,\n                \"product_id\": 3,\n                \"order_id\": 3,\n                \"quantity\": 2,\n                \"price\": \"74.75\",\n                \"total\": \"149.50\",\n                \"created_at\": \"2023-01-07T17:13:43.000000Z\",\n                \"updated_at\": \"2023-01-07T17:13:43.000000Z\",\n                \"product\": [\n                    {\n                        \"id\": 3,\n                        \"name\": \"Converse\",\n                        \"price\": \"74.75\",\n                        \"created_at\": \"2023-01-07T12:00:07.000000Z\",\n                        \"updated_at\": \"2023-01-07T12:00:07.000000Z\",\n                        \"pivot\": {\n                            \"product_id\": 3,\n                            \"id\": 3\n                        }\n                    }\n                ]\n            }\n        ],\n        \"customer\": {\n            \"id\": 1,\n            \"job_title\": \"Web Developer\",\n            \"email\": \"Harvey_Thornton4640@hourpy.biz\",\n            \"name\": \"Harvey Thornton\",\n            \"first_name\": \"Harvey \",\n            \"last_name\": \"Thornton\",\n            \"registered_since\": \"2019-04-03T00:00:00.000000Z\",\n            \"phone\": \"1-781-821-4473\",\n            \"created_at\": \"2023-01-07T11:58:49.000000Z\",\n            \"updated_at\": \"2023-01-07T11:58:49.000000Z\"\n        }\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Delete Order",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiODUzN2ZhNTdkZjE4ODQ2Y2JhYzJkYzJkZjBmMmM0N2NiMjk0NjU2MDFjOGE4YjUzN2NmNTEzY2EzNDFhMzhiNWVhMDY5NWQ4NTBhZTE1MjkiLCJpYXQiOjE2NzMwOTcyMDEuNDgyMzEzLCJuYmYiOjE2NzMwOTcyMDEuNDgyMzU5LCJleHAiOjE3MDQ2MzMyMDEuNDQzNDQyLCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.nWjNHHHk_IaB0ez-RCQltpEdr0dagdUnPTd5uF5kABC1KZBOHQQzTbi4FE9PnC-YXvwu2Gs9OOBZ_9u-irAQVFMk2GkPtyT0V5eYG5qhMvXu_S46GXYdDg2744SAJbRVSuwcZnOjynx2bzdWi0aSkAg8dFgCBrerr2HnW_J4lUWHLQ0WpwYxF2HRpb34nDxOOmRk5F8YehvBMD-CbuWeUqq_071IUyBsAe3utBp9qwR6bmuhMBwoLwM9ant2KsHZfnpg08H0-H6lU__oaJdidQi7lOWFnVHEDa77uaIXttSQ5TDjmtM4KkQYPfuab5KWglyKQDoZOuBsT0PEq6E_vhB1GopmSPQVIOXUStszX2HzP5Wa7cbkbzYKotp23902M0vkS6OlNbp9dGXIKFgLNj0CCTpJyCmPf6IhZOw8JB1SDi244IBW006_r-sj_odd-47-lp4643D1nPK0cqzRnAyS4HiGaO_pGcAJp3uwlfE9oXfexFzhAGH1VUYzcCUsRCmuXnsxplL-tEZdsAFUPqwurxk1EpYbXB5fD1gBt_zaB69Z3imUHww2FVNQyOiY5cR_3watXsvNAA4adHqfrnrVbIzEhtnrqWz_7b6e-WgxE3orV2k_U-qTQSNsupskgW2tGDxkEi0oGF4pJary9BopfRUsCePxfpjwc12Oeug",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/orders/1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"orders",
+						"1"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Delete Order",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/v1/orders/1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"orders",
+								"1"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "127.0.0.1:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 07 Jan 2023 18:22:59 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 07 Jan 2023 18:22:59 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.0.11"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "58"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"success\",\n    \"message\": \"Order has been removed successfully.\"\n}"
+				}
+			]
+		},
+		{
+			"name": "add-products inside order",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiODUzN2ZhNTdkZjE4ODQ2Y2JhYzJkYzJkZjBmMmM0N2NiMjk0NjU2MDFjOGE4YjUzN2NmNTEzY2EzNDFhMzhiNWVhMDY5NWQ4NTBhZTE1MjkiLCJpYXQiOjE2NzMwOTcyMDEuNDgyMzEzLCJuYmYiOjE2NzMwOTcyMDEuNDgyMzU5LCJleHAiOjE3MDQ2MzMyMDEuNDQzNDQyLCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.nWjNHHHk_IaB0ez-RCQltpEdr0dagdUnPTd5uF5kABC1KZBOHQQzTbi4FE9PnC-YXvwu2Gs9OOBZ_9u-irAQVFMk2GkPtyT0V5eYG5qhMvXu_S46GXYdDg2744SAJbRVSuwcZnOjynx2bzdWi0aSkAg8dFgCBrerr2HnW_J4lUWHLQ0WpwYxF2HRpb34nDxOOmRk5F8YehvBMD-CbuWeUqq_071IUyBsAe3utBp9qwR6bmuhMBwoLwM9ant2KsHZfnpg08H0-H6lU__oaJdidQi7lOWFnVHEDa77uaIXttSQ5TDjmtM4KkQYPfuab5KWglyKQDoZOuBsT0PEq6E_vhB1GopmSPQVIOXUStszX2HzP5Wa7cbkbzYKotp23902M0vkS6OlNbp9dGXIKFgLNj0CCTpJyCmPf6IhZOw8JB1SDi244IBW006_r-sj_odd-47-lp4643D1nPK0cqzRnAyS4HiGaO_pGcAJp3uwlfE9oXfexFzhAGH1VUYzcCUsRCmuXnsxplL-tEZdsAFUPqwurxk1EpYbXB5fD1gBt_zaB69Z3imUHww2FVNQyOiY5cR_3watXsvNAA4adHqfrnrVbIzEhtnrqWz_7b6e-WgxE3orV2k_U-qTQSNsupskgW2tGDxkEi0oGF4pJary9BopfRUsCePxfpjwc12Oeug",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "order_id",
+							"value": "3",
+							"type": "text"
+						},
+						{
+							"key": "product_id",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "quantity",
+							"value": "2",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/orders/add-products",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"orders",
+						"add-products"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "add-products inside order",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "order_id",
+									"value": "3",
+									"type": "text"
+								},
+								{
+									"key": "product_id",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "quantity",
+									"value": "2",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/v1/orders/add-products",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"orders",
+								"add-products"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "127.0.0.1:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 07 Jan 2023 18:57:57 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 07 Jan 2023 18:57:57 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.0.11"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "59"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"message\": \"Product added in order successfully.\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Get Total value of order to be paid",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiODUzN2ZhNTdkZjE4ODQ2Y2JhYzJkYzJkZjBmMmM0N2NiMjk0NjU2MDFjOGE4YjUzN2NmNTEzY2EzNDFhMzhiNWVhMDY5NWQ4NTBhZTE1MjkiLCJpYXQiOjE2NzMwOTcyMDEuNDgyMzEzLCJuYmYiOjE2NzMwOTcyMDEuNDgyMzU5LCJleHAiOjE3MDQ2MzMyMDEuNDQzNDQyLCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.nWjNHHHk_IaB0ez-RCQltpEdr0dagdUnPTd5uF5kABC1KZBOHQQzTbi4FE9PnC-YXvwu2Gs9OOBZ_9u-irAQVFMk2GkPtyT0V5eYG5qhMvXu_S46GXYdDg2744SAJbRVSuwcZnOjynx2bzdWi0aSkAg8dFgCBrerr2HnW_J4lUWHLQ0WpwYxF2HRpb34nDxOOmRk5F8YehvBMD-CbuWeUqq_071IUyBsAe3utBp9qwR6bmuhMBwoLwM9ant2KsHZfnpg08H0-H6lU__oaJdidQi7lOWFnVHEDa77uaIXttSQ5TDjmtM4KkQYPfuab5KWglyKQDoZOuBsT0PEq6E_vhB1GopmSPQVIOXUStszX2HzP5Wa7cbkbzYKotp23902M0vkS6OlNbp9dGXIKFgLNj0CCTpJyCmPf6IhZOw8JB1SDi244IBW006_r-sj_odd-47-lp4643D1nPK0cqzRnAyS4HiGaO_pGcAJp3uwlfE9oXfexFzhAGH1VUYzcCUsRCmuXnsxplL-tEZdsAFUPqwurxk1EpYbXB5fD1gBt_zaB69Z3imUHww2FVNQyOiY5cR_3watXsvNAA4adHqfrnrVbIzEhtnrqWz_7b6e-WgxE3orV2k_U-qTQSNsupskgW2tGDxkEi0oGF4pJary9BopfRUsCePxfpjwc12Oeug",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/orders/total-bill/3",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"orders",
+						"total-bill",
+						"3"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Orders Listing",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/v1/orders",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"orders"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "127.0.0.1:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 07 Jan 2023 15:55:57 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 07 Jan 2023 15:55:57 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.0.11"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "59"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"message\": \"Order List.\",\n    \"data\": [\n        {\n            \"id\": 1,\n            \"customer_id\": 1040,\n            \"payed\": \"0.00\",\n            \"created_at\": null,\n            \"updated_at\": null,\n            \"order_items\": [\n                {\n                    \"id\": 1,\n                    \"product_id\": 1,\n                    \"order_id\": 1,\n                    \"quantity\": 1,\n                    \"price\": \"73.78\",\n                    \"total\": \"73.78\",\n                    \"created_at\": null,\n                    \"updated_at\": null,\n                    \"product\": [\n                        {\n                            \"id\": 1,\n                            \"name\": \"Merc Clothing\",\n                            \"price\": \"73.78\",\n                            \"created_at\": \"2023-01-07T12:00:07.000000Z\",\n                            \"updated_at\": \"2023-01-07T12:00:07.000000Z\",\n                            \"pivot\": {\n                                \"product_id\": 1,\n                                \"id\": 1\n                            }\n                        }\n                    ]\n                }\n            ],\n            \"customer\": {\n                \"id\": 1040,\n                \"job_title\": \"Accountant\",\n                \"email\": \"Josh_Higgs6625@nanoff.biz\",\n                \"name\": \"Josh Higgs\",\n                \"first_name\": \"Josh \",\n                \"last_name\": \"Higgs\",\n                \"registered_since\": \"2019-08-09T00:00:00.000000Z\",\n                \"phone\": \"7-517-835-4225\",\n                \"created_at\": \"2023-01-07T11:59:02.000000Z\",\n                \"updated_at\": \"2023-01-07T11:59:02.000000Z\"\n            }\n        }\n    ]\n}"
+				},
+				{
+					"name": "Get Specific Order details",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/v1/orders/detail/3",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"orders",
+								"detail",
+								"3"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "127.0.0.1:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 07 Jan 2023 17:32:19 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 07 Jan 2023 17:32:19 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.0.11"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "58"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"message\": \"Order retrieved successfully.\",\n    \"data\": {\n        \"id\": 3,\n        \"customer_id\": 1,\n        \"payed\": \"0.00\",\n        \"created_at\": \"2023-01-07T17:13:43.000000Z\",\n        \"updated_at\": \"2023-01-07T17:13:43.000000Z\",\n        \"order_items\": [\n            {\n                \"id\": 3,\n                \"product_id\": 3,\n                \"order_id\": 3,\n                \"quantity\": 2,\n                \"price\": \"74.75\",\n                \"total\": \"149.50\",\n                \"created_at\": \"2023-01-07T17:13:43.000000Z\",\n                \"updated_at\": \"2023-01-07T17:13:43.000000Z\",\n                \"product\": [\n                    {\n                        \"id\": 3,\n                        \"name\": \"Converse\",\n                        \"price\": \"74.75\",\n                        \"created_at\": \"2023-01-07T12:00:07.000000Z\",\n                        \"updated_at\": \"2023-01-07T12:00:07.000000Z\",\n                        \"pivot\": {\n                            \"product_id\": 3,\n                            \"id\": 3\n                        }\n                    }\n                ]\n            }\n        ],\n        \"customer\": {\n            \"id\": 1,\n            \"job_title\": \"Web Developer\",\n            \"email\": \"Harvey_Thornton4640@hourpy.biz\",\n            \"name\": \"Harvey Thornton\",\n            \"first_name\": \"Harvey \",\n            \"last_name\": \"Thornton\",\n            \"registered_since\": \"2019-04-03T00:00:00.000000Z\",\n            \"phone\": \"1-781-821-4473\",\n            \"created_at\": \"2023-01-07T11:58:49.000000Z\",\n            \"updated_at\": \"2023-01-07T11:58:49.000000Z\"\n        }\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "pay-order",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiODUzN2ZhNTdkZjE4ODQ2Y2JhYzJkYzJkZjBmMmM0N2NiMjk0NjU2MDFjOGE4YjUzN2NmNTEzY2EzNDFhMzhiNWVhMDY5NWQ4NTBhZTE1MjkiLCJpYXQiOjE2NzMwOTcyMDEuNDgyMzEzLCJuYmYiOjE2NzMwOTcyMDEuNDgyMzU5LCJleHAiOjE3MDQ2MzMyMDEuNDQzNDQyLCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.nWjNHHHk_IaB0ez-RCQltpEdr0dagdUnPTd5uF5kABC1KZBOHQQzTbi4FE9PnC-YXvwu2Gs9OOBZ_9u-irAQVFMk2GkPtyT0V5eYG5qhMvXu_S46GXYdDg2744SAJbRVSuwcZnOjynx2bzdWi0aSkAg8dFgCBrerr2HnW_J4lUWHLQ0WpwYxF2HRpb34nDxOOmRk5F8YehvBMD-CbuWeUqq_071IUyBsAe3utBp9qwR6bmuhMBwoLwM9ant2KsHZfnpg08H0-H6lU__oaJdidQi7lOWFnVHEDa77uaIXttSQ5TDjmtM4KkQYPfuab5KWglyKQDoZOuBsT0PEq6E_vhB1GopmSPQVIOXUStszX2HzP5Wa7cbkbzYKotp23902M0vkS6OlNbp9dGXIKFgLNj0CCTpJyCmPf6IhZOw8JB1SDi244IBW006_r-sj_odd-47-lp4643D1nPK0cqzRnAyS4HiGaO_pGcAJp3uwlfE9oXfexFzhAGH1VUYzcCUsRCmuXnsxplL-tEZdsAFUPqwurxk1EpYbXB5fD1gBt_zaB69Z3imUHww2FVNQyOiY5cR_3watXsvNAA4adHqfrnrVbIzEhtnrqWz_7b6e-WgxE3orV2k_U-qTQSNsupskgW2tGDxkEi0oGF4pJary9BopfRUsCePxfpjwc12Oeug",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "customer_id",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "payed",
+							"value": "297.06",
+							"type": "text"
+						},
+						{
+							"key": "order_id",
+							"value": "3",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/orders/pay-order",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"orders",
+						"pay-order"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
