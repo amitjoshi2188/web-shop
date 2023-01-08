@@ -9,12 +9,16 @@ use Illuminate\Http\Request;
 use Symfony\Component\HttpFoundation\Response as HTTPResponse;
 use Validator;
 
-
+/**
+ * Authentication class related methods.
+ */
 class PassportAuthController extends Controller
 {
     /**
      * Register new users.
-     * @param Request $request
+     *
+     * @param Request $request request params.
+     *
      * @return JsonResponse
      */
     public function register(Request $request): JsonResponse
@@ -45,7 +49,9 @@ class PassportAuthController extends Controller
 
     /**
      * Validate Login details.
-     * @param Request $request
+     *
+     * @param Request $request contains email and password parameters.
+     *
      * @return JsonResponse
      */
     public function login(Request $request): JsonResponse
@@ -64,19 +70,21 @@ class PassportAuthController extends Controller
             'password' => $request->password
         ];
 
-        if (auth()->attempt($data)) {
-            $token = auth()->user()->createToken('Laravel9PassportAuth')->accessToken;
-
-            return response()->json(['status' => 'success', 'message' => "Login successful.", 'token' => $token],
-                HTTPResponse::HTTP_OK);
-        } else {
+        if (!auth()->attempt($data)) {
             return response()->json(['status' => 'error', 'message' => 'Unauthorised'],
                 HTTPResponse::HTTP_UNAUTHORIZED);
         }
+
+        $token = auth()->user()->createToken('Laravel9PassportAuth')->accessToken;
+
+        return response()->json(['status' => 'success', 'message' => "Login successful.", 'token' => $token],
+            HTTPResponse::HTTP_OK);
+
     }
 
     /**
      * Returns Logged-in users information.
+     *
      * @return JsonResponse
      */
     public function userInfo(): JsonResponse
