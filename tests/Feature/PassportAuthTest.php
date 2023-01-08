@@ -17,7 +17,7 @@ class PassportAuthTest extends TestCase
     use RefreshDatabase, HasApiTokens;
 
     /**
-     * A basic feature test example.
+     * Registration validation test case.
      *
      * @return void
      */
@@ -59,6 +59,9 @@ class PassportAuthTest extends TestCase
             ]);
     }
 
+    /**
+     * Login validation case.
+     */
     public function testRequiredFieldsForLogin()
     {
         $this->json('POST', 'api/v1/login', ['Accept' => 'application/json'])
@@ -72,16 +75,18 @@ class PassportAuthTest extends TestCase
             ]);
     }
 
+    /**
+     * Successful login case.
+     */
     public function testSuccessLogin()
     {
         // Creating Users
-        $test = User::create([
+        User::create([
             'name' => 'Manoj',
             'email' => $email = time() . '@gmail.com',
             'password' => $password = bcrypt('12345678')
         ]);
 
-        // Simulated landing
         $userData = [
             'email' => $email,
             'password' => "12345678",
@@ -95,16 +100,18 @@ class PassportAuthTest extends TestCase
         $this->assertEquals('Login successful.', $response->json()['message']);
     }
 
+    /**
+     * Unauthorized response case on login
+     */
     public function testUnauthorizedLogin()
     {
         // Creating Users
-        $test = User::create([
+        User::create([
             'name' => 'Manoj',
             'email' => $email = time() . '@gmail.com',
             'password' => $password = bcrypt('12345678')
         ]);
 
-        // Simulated landing
         $userData = [
             'email' => $email,
             'password' => "123456789",
@@ -114,15 +121,17 @@ class PassportAuthTest extends TestCase
             $userData, ['Accept' => 'application/json'])
             ->assertStatus(HTTPResponse::HTTP_UNAUTHORIZED)
             ->assertJsonStructure(["status", "message"]);
+
         $this->assertEquals('error', $response->json()['status']);
         $this->assertEquals('Unauthorised', $response->json()['message']);
     }
 
+    /**
+     * Gets logged-in user detail case coverage.
+     */
     public function testUserInfo()
     {
-        // Creating Users
         $token = $this->authenticate();
-
 
         $response = $this->withHeaders([
             'Authorization' => 'Bearer ' . $token,
