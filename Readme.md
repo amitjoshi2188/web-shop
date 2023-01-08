@@ -11,12 +11,13 @@ Notes:
 
 
 To run the project need to do below steps.
-
-1. php artisan serve    : to start the project.
-2. npm run dev          : As Integrated authentication package for web(not used as per given definition).
-3. php artisan migrate  : to import tables.
-4. php artisan db:seed --class=UserSeeder       : for creating default login details for dashboard (email : admin@admin.com, password : "password").
-5. php artisan db:seed --class=ProductSeeder    : for import product csv data into database.
-6. php artisan db:seed --class=CustomerSeeder   : for import Customers csv data into database.
-
+1. composer install		: to install dependency.
+2. php artisan migrate  : to import tables structure.
+3. php artisan db:seed --class=UserSeeder       : for creating default login details for dashboard (email : admin@admin.com, password : "password").
+4. php artisan db:seed --class=ProductSeeder    : for import product csv data into database.
+5. php artisan db:seed --class=CustomerSeeder   : for import Customers csv data into database.
+6. php artisan passport:install					: to install passport dependency.
+7. npm install
+6. php artisan serve    : to start the project.
+7. npm run dev`			: for starting npm package.
 

@@ -4,7 +4,7 @@ namespace Database\Seeders;
 
 use App\Models\Product;
 use Illuminate\Database\Seeder;
-
+use DB;
 class ProductSeeder extends Seeder
 {
     /**
@@ -14,6 +14,7 @@ class ProductSeeder extends Seeder
      */
     public function run()
     {
+        DB::statement('SET FOREIGN_KEY_CHECKS=0;');
         Product::truncate(); // removes existing data before inserting
         $csvData = fopen(base_path('database/csv/products.csv'), 'r');
         $transRow = true;
